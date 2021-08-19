@@ -115,7 +115,7 @@ abstract class extendParentClassTwo extends parentClass
      * @param int $base
      * @param int $exp
      */
-    abstract public function powInt(int $base, int $exp)
+    public function powInt(int $base, int $exp)
     {
         $res = pow($base, $exp);
         echo $res, "\n";
