@@ -34,8 +34,9 @@ class ComposerStaticInit99b00c816955d6aeef2ff46db4e325fd
     );
 
     public static $classMap = array (
-        'App\\AppFirstClass' => __DIR__ . '/../..',
-        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'App\\AppClassSecond' => __DIR__ . '/../..' . '/app/AppClassSecond.php',
+        'App\\AppFirstClass' => __DIR__ . '/../..' . '/app/AppFirstClass.php',
+        'Core\\Router' => __DIR__ . '/../..' . '/core/Router.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

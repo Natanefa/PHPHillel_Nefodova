@@ -2,9 +2,9 @@
 require 'vendor/autoload.php';
 
 use Core\Router;
+use App\AppFirstClass;
 
 $obj = new App\AppFirstClass();
-echo $obj->a, "\n";
 
 $routerObj = new Router();
 $routerObj->run();
