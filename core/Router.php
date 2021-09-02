@@ -27,16 +27,16 @@ final class Router
         $uri = $this->getURI();
 
         if (empty($uri)) {
-            $controllerNameSpace = '\App\Controller\Index';
+            $controllerNameSpace = 'App/Controllers/Admin/Index';
         } else {
-            $controllerNameSpace = '\App\Controller\\' . ucfirst($uri);
+            $controllerNameSpace = 'App/Controllers/Admin/' . ucfirst($uri);
         }
-        var_export($controllerNameSpace);
+//        var_export($controllerNameSpace);
 
         if(class_exists($controllerNameSpace)) {
             $classObj = new $controllerNameSpace;
         } else {
-            $classObj = new \App\AppFirstClass;
+            $classObj = new App\AppFirstClass;
         }
 
         $classObj->index();

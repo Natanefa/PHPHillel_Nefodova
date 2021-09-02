@@ -14,7 +14,8 @@
     "psr-4": {
       "App\\": "app/",
       "Core\\": "core/",
-      "Components\\": "components/"
+      "Components\\": "components/",
+      "Controllers\\": "app/Controllers"
     }
   },
   "require": {

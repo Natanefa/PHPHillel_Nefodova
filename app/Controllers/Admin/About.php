@@ -3,8 +3,8 @@
 namespace App\Controllers\Admin;
 
 use Core\View;
-use app\Controllers\Admin\AbstractController;
-use app\Models\About;
+//use app\Controllers\Admin\AbstractController;
+//use app\Models\About;
 
 class About extends AbstractController
 {
@@ -21,5 +21,12 @@ class About extends AbstractController
         $modelClass = new About();
         $list = $modelClass->list();
         $this->gener('About', $list);
+    }
+
+    public function about()
+    {
+        $modelObjAboutTitle = new About();
+        $getByTitle = $this->$modelObjAboutTitle->getAboutByTitle('123');
+        $this->gener('About', $getByTitle);
     }
 }
